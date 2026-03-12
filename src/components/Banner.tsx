@@ -1,11 +1,9 @@
 "use client"
 
 import { useState } from "react"
-//import { useRouter } from "next/navigation"
+import Link from "next/link"
 
 export default function Banner(){
-
-  //const router = useRouter()
 
   const images = [
     "/img/cover.jpg",
@@ -29,12 +27,13 @@ export default function Banner(){
         className="w-full h-full object-cover cursor-pointer"
       />
 
-      <button
-        onClick={()=>router.push("/venue")}
-        className="absolute bottom-5 right-5 bg-red-500 px-5 py-2 rounded-lg shadow-md hover:bg-blue-400 text-white"
-      >
-        ลองเอาเมาส์มาชี้ดูสิ~
-      </button>
+      <Link href="/venue">
+        <button
+          className="absolute bottom-5 right-5 bg-red-500 px-5 py-2 rounded-lg shadow-md hover:bg-blue-400 text-white"
+        >
+          ลองเอาเมาส์มาชี้ดูสิ~
+        </button>
+      </Link>
 
     </div>
   )
