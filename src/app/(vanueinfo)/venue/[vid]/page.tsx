@@ -6,7 +6,7 @@ export default async function Page(
 
   const { vid } = await params
 
-  const venue = venueData[vid]
+  const venue = venueData[vid as keyof typeof venueData]
 
   return (
     <main className="text-center p-10">
