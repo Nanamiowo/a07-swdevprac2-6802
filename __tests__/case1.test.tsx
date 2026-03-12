@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
-import Page from '@/app/(venueinfo)/venue/page'
+import Page from '@/app/(vanueinfo)/vanue/page'
 import CardPanel from '@/components/CardPanel'
 jest.mock('../src/components/CardPanel')
 
